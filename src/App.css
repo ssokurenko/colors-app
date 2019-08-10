@@ -1,3 +1,22 @@
 .App {
-  text-align: center;
+
+}
+
+.App-name {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.Content {
+  background: #fff;
+}
+
+.Content-wrapper {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  padding: 1rem;
+}
+
+.Footer {
+  margin-top: 2rem;
 }

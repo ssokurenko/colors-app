@@ -1,13 +1,30 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 
-import { Colors } from './components'
+import 'antd/dist/antd.css';
+import { Layout } from 'antd';
+import { Colors } from './components';
+
+const { Header, Footer, Content } = Layout;
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <h1>Colors</h1>
-      <Colors />
+      <Layout>
+        <Header>
+          <div className="App-name">
+            Colors
+          </div>
+        </Header>
+        <Content className="Content">
+          <div className="Content-wrapper">
+            <Colors />
+          </div>
+        </Content>
+        <Footer className="Footer">
+          &copy;2019&nbsp;Sergey Sokurenko
+        </Footer>
+      </Layout>
     </div>
   );
 }
